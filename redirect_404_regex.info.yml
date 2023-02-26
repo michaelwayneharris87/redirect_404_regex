@@ -1,0 +1,6 @@
+name: Redirect 404 Regex
+type: module
+description: Redirects 404s to an alternate path on your site based on regex matching.
+package: Custom
+core_version_requirement: ^9 || ^10
+configure: entity.redirect_404_regex_rule.collection

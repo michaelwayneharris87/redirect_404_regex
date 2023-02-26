@@ -1,0 +1,6 @@
+services:
+  redirect_404_regex.redirect_404_regex_subscriber:
+    class: Drupal\redirect_404_regex\EventSubscriber\Redirect404RegexSubscriber
+    arguments: [ '@entity_type.manager', '@path.current' ]
+    tags:
+      - { name: event_subscriber }

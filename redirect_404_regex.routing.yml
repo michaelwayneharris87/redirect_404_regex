@@ -1,0 +1,39 @@
+entity.redirect_404_regex_rule.collection:
+  path: '/admin/config/search/redirect-404-regex-rule'
+  defaults:
+    _entity_list: 'redirect_404_regex_rule'
+    _title: 'Redirect 404 Regex Rule configuration'
+  requirements:
+    _permission: 'administer redirect_404_regex_rule'
+
+entity.redirect_404_regex_rule.add_form:
+  path: '/admin/config/search/redirect-404-regex-rule/add'
+  defaults:
+    _entity_form: 'redirect_404_regex_rule.add'
+    _title: 'Add a redirect 404 regex rule'
+  requirements:
+    _permission: 'administer redirect_404_regex_rule'
+
+entity.redirect_404_regex_rule.edit_form:
+  path: '/admin/config/search/redirect-404-regex-rule/{redirect_404_regex_rule}'
+  defaults:
+    _entity_form: 'redirect_404_regex_rule.edit'
+    _title: 'Edit a redirect 404 regex rule'
+  requirements:
+    _permission: 'administer redirect_404_regex_rule'
+
+entity.redirect_404_regex_rule.delete_form:
+  path: '/admin/config/search/redirect-404-regex-rule/{redirect_404_regex_rule}/delete'
+  defaults:
+    _entity_form: 'redirect_404_regex_rule.delete'
+    _title: 'Delete a redirect 404 regex rule'
+  requirements:
+    _permission: 'administer redirect_404_regex_rule'
+
+entity.redirect_404_regex_rule.set_weights:
+  path: '/admin/config/search/redirect-404-regex-rule/reorder'
+  defaults:
+    _title: 'Set Redirect 404 Regex Rule Weights'
+    _form: '\Drupal\redirect_404_regex\Form\SetRedirect404RegexWeights'
+  requirements:
+    _permission: 'administer redirect_404_regex_rule'

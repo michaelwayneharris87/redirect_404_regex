@@ -1,0 +1,10 @@
+entity.redirect_404_regex_rule.add_form:
+  route_name: 'entity.redirect_404_regex_rule.add_form'
+  title: 'Add redirect 404 regex rule'
+  appears_on:
+    - entity.redirect_404_regex_rule.collection
+entity.redirect_404_regex_rule.set_weights:
+  route_name: 'entity.redirect_404_regex_rule.set_weights'
+  title: 'Set redirect 404 regex rule weights'
+  appears_on:
+    - entity.redirect_404_regex_rule.collection

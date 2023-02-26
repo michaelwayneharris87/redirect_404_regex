@@ -1,0 +1,18 @@
+redirect_404_regex.redirect_404_regex_rule.*:
+  type: config_entity
+  label: Redirect 404 Regex Rule
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    uuid:
+      type: string
+    regex_pattern:
+      type: string
+    redirect_path:
+      type: string
+    weight:
+      type: integer
